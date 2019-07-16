@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="289*"/>
+            <ColumnDefinition Width="214*"/>
+            <ColumnDefinition Width="289*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="191*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\user\Desktop\Даша\Font.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Label Content="Login" FontSize="24" Foreground="White" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="73,0" Width="68"/>
+        <Label Content="Login" FontSize="24" Foreground="White" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" Margin="70,0,143,0" Width="76"/>
+        <Label Content="Password" FontSize="24" Foreground="White" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" Margin="70,0,96,0" Width="123"/>
+        <TextBox x:Name="tbLogin" Width="180" Height="25" Grid.Row="2" Grid.Column="1"/>
+        <PasswordBox x:Name="pbPassword" Width="180" Height="25" Grid.Row="3" Grid.Column="1"/>
+        <Button x:Name="btnNext" Content="Next" Grid.Column="1" Grid.Row="4" Width="180" Height="60" FontSize="24"/>
     </Grid>
 </Window>
