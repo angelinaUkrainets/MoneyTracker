@@ -24,5 +24,12 @@ namespace MoneyTracker
         {
             InitializeComponent();
         }
+
+        private void BtnRegister_Click(object sender, RoutedEventArgs e)
+        {
+            Register register = new Register();
+            this.Close();
+            register.ShowDialog();
+        }
     }
 }

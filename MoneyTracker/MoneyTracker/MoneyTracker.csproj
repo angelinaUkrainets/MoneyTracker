@@ -118,5 +118,8 @@
   <ItemGroup>
     <Resource Include="Gallery\fone.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\icon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
