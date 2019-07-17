@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyTracker", "MoneyTracker\MoneyTracker.csproj", "{1A9FC992-9921-426B-B55B-173374776F99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{EEA87A72-3CA7-4585-8564-DA6552E5A28D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLL", "DLL\DLL.csproj", "{8A6A00E1-E317-48B5-AA62-412B85C240AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{1A9FC992-9921-426B-B55B-173374776F99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A9FC992-9921-426B-B55B-173374776F99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A9FC992-9921-426B-B55B-173374776F99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEA87A72-3CA7-4585-8564-DA6552E5A28D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEA87A72-3CA7-4585-8564-DA6552E5A28D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEA87A72-3CA7-4585-8564-DA6552E5A28D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEA87A72-3CA7-4585-8564-DA6552E5A28D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A6A00E1-E317-48B5-AA62-412B85C240AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6A00E1-E317-48B5-AA62-412B85C240AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6A00E1-E317-48B5-AA62-412B85C240AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6A00E1-E317-48B5-AA62-412B85C240AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

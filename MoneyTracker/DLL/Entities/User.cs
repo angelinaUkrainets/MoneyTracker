@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MoneyTracker.Entities
 {
-    class User
+    public class User
     {
         [Key] public int ID { get; set; }
 
