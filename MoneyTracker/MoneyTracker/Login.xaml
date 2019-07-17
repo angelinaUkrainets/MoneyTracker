@@ -26,9 +26,9 @@
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\user.itstep\Source\Repos\MoneyTracker2\MoneyTracker\MoneyTracker\Gallery\fone.png" Stretch="UniformToFill"/>
         </Grid.Background>
-        <Label Content="LOGIN" FontSize="15" Foreground="White" FontWeight="Medium"  Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="19,0,11,0" Width="68"/>
-        <Label Content="Login :" FontSize="15" Foreground="White" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" Margin="-2,0,23,1" Width="76"/>
-        <Label Content="Password :" FontSize="15" Foreground="White" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" Margin="4,0,67,0" Width="124" Grid.ColumnSpan="2"/>
+        <Label Content="LOGIN" FontSize="15" Foreground="White" FontWeight="Medium"  Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center"  Width="68"/>
+        <Label Content="Login :" FontSize="14" Foreground="White" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left"/>
+        <Label Content="Password :" FontSize="14" Foreground="White" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left"/>
         <Button x:Name="btnNext" Content="Next" Grid.Column="1" Grid.Row="7" Height="30" Width="90" HorizontalAlignment="Center" FontSize="10" />
         <Button x:Name="btnRegister" Content="Registration" Grid.Row="6" Height="30" Width="90" FontSize="10" HorizontalAlignment="Center" Grid.Column="1"/>
         <TextBox x:Name="tbLogin" Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="3"  Background="Transparent"/>
