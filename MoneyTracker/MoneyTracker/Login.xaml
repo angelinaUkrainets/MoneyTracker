@@ -24,7 +24,7 @@
             <RowDefinition Height="26*"/>
         </Grid.RowDefinitions>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\user.itstep\Source\Repos\MoneyTracker2\MoneyTracker\MoneyTracker\Gallery\fone.png" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="Gallery\fone.png" Stretch="UniformToFill"/>
         </Grid.Background>
         <Label Content="LOGIN" FontSize="15" Foreground="White" FontWeight="Medium"  Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="19,0,11,0" Width="68"/>
         <Label Content="Login :" FontSize="15" Foreground="White" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" Margin="-2,0,23,1" Width="76"/>
