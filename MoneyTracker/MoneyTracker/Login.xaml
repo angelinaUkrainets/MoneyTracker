@@ -32,5 +32,7 @@
         <Label Content="Password :" FontSize="15" Foreground="White" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" Margin="4,0,67,0" Width="124" Grid.ColumnSpan="2"/>
         <Button x:Name="btnNext" Content="Next" Grid.Column="1" Grid.Row="7" Height="30" Width="90" HorizontalAlignment="Center" FontSize="10" />
         <Button x:Name="btnRegister" Click="BtnRegister_Click" Content="Registration" Grid.Row="6" Height="30" Width="90" FontSize="10" HorizontalAlignment="Center" Grid.Column="1"/>
+        <TextBox x:Name="tbLogin" Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="3" />
+        <PasswordBox x:Name="pbPassword" Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="3"/>
     </Grid>
 </Window>
