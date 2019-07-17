@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MoneyTracker"
         mc:Ignorable="d"
-        Title="Register" Height="450" Width="800">
+       Title="Registration" Height="400" Width="300" ResizeMode="NoResize" WindowStyle="SingleBorderWindow">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="Gallery\fone.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <StackPanel>
+        <Label Content="Registration" FontSize="13" Foreground="White" FontWeight="Medium"  Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="2,0" />
+        <Label Content="Name :" FontSize="14" Foreground="White" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbName" Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="3"  Background="Transparent"/>
+        <Label Content="Sername :" FontSize="14" Foreground="White" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbSername" Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="3"  Background="Transparent"/>
+        <Label Content="Email :" FontSize="14" Foreground="White" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbEmail" Grid.Row="6"  Grid.Column="0" Grid.ColumnSpan="3"  Background="Transparent"/>
+        <Label Content="Login:" FontSize="14" Foreground="White" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbLogin" Grid.Row="8"  Grid.Column="0" Grid.ColumnSpan="3"  Background="Transparent"/>
+        <Label Content="Password :" FontSize="14" Foreground="White" Grid.Column="0" Grid.Row="9" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbPassword" Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="10"  Background="Transparent"/>
+        </StackPanel>
     </Grid>
 </Window>
