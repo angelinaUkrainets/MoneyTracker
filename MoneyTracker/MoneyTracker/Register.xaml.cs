@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BLL.Interfaces;
+using BLL.Models;
+using BLL.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +22,31 @@ namespace MoneyTracker
     /// </summary>
     public partial class Register : Window
     {
+        private readonly IUserService _userService;
         public Register()
         {
             InitializeComponent();
+            _userService = new UserService();
+        }
+
+        private void BtnSave_Click(object sender, RoutedEventArgs e)
+        {
+            int res = _userService.Register(new UserRegistrationModel()
+            {
+                Name = tbName.Text,
+                Surname = tbSurname.Text,
+                Email = tbEmail.Text,
+                Login = tbLogin.Text,
+                Password = tbPassword.Text
+            });
+            if (res > 0)
+            {
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Error Login or Password");
+            }
         }
     }
 }

@@ -11,17 +11,18 @@
             <ImageBrush ImageSource="Gallery\fone.png" Stretch="UniformToFill"/>
         </Grid.Background>
         <StackPanel>
-        <Label Content="Registration" FontSize="13" Foreground="White" FontWeight="Medium"  Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="2,0" />
-        <Label Content="Name :" FontSize="14" Foreground="White" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left"/>
-        <TextBox x:Name="tbName" Grid.Row="2"  Grid.Column="0" Grid.ColumnSpan="3"  Background="Transparent"/>
-        <Label Content="Sername :" FontSize="14" Foreground="White" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left"/>
-        <TextBox x:Name="tbSername" Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="3"  Background="Transparent"/>
-        <Label Content="Email :" FontSize="14" Foreground="White" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left"/>
-        <TextBox x:Name="tbEmail" Grid.Row="6"  Grid.Column="0" Grid.ColumnSpan="3"  Background="Transparent"/>
-        <Label Content="Login:" FontSize="14" Foreground="White" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Left"/>
-        <TextBox x:Name="tbLogin" Grid.Row="8"  Grid.Column="0" Grid.ColumnSpan="3"  Background="Transparent"/>
-        <Label Content="Password :" FontSize="14" Foreground="White" Grid.Column="0" Grid.Row="9" HorizontalAlignment="Left"/>
-        <TextBox x:Name="tbPassword" Grid.Row="4"  Grid.Column="0" Grid.ColumnSpan="10"  Background="Transparent"/>
+        <Label Content="Registration" FontSize="13" Foreground="White" FontWeight="Medium" HorizontalAlignment="Center"/>
+        <Label Content="Name :" FontSize="14" Foreground="White" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbName" Foreground="White" Background="Transparent"/>
+        <Label Content="Surname :" FontSize="14" Foreground="White" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbSurname" Foreground="White" Background="Transparent"/>
+        <Label Content="Email :" FontSize="14" Foreground="White" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbEmail" Foreground="White" Background="Transparent"/>
+        <Label Content="Login:" FontSize="14" Foreground="White" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbLogin" Foreground="White" Background="Transparent"/>
+        <Label Content="Password :" FontSize="14" Foreground="White" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbPassword" Foreground="White" Background="Transparent"/>
+        <Button x:Name="btnSave" Content="Save" Height="30" Width="90" FontSize="10" HorizontalAlignment="Center" Margin="0, 10, 0, 0" Click="BtnSave_Click"/>
         </StackPanel>
     </Grid>
 </Window>

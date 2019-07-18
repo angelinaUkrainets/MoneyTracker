@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BLL.Interfaces;
+using BLL.Models;
+using BLL.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +23,11 @@ namespace MoneyTracker
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly IUserService _userService;
         public MainWindow()
         {
             InitializeComponent();
+            _userService = new UserService();
         }
 
         private void BtnRegister_Click(object sender, RoutedEventArgs e)
@@ -30,6 +35,32 @@ namespace MoneyTracker
             Register register = new Register();
             this.Close();
             register.ShowDialog();
+        }
+
+        private void BtnNext_Click(object sender, RoutedEventArgs e)
+        {
+            int result = _userService.Login(new UserLoginModel()
+            {
+                Login = tbLogin.Text,
+                Password = pbPassword.Password
+            });
+            if (result > 0)
+            {
+                this.Visibility = Visibility.Hidden;
+                MainTrackerWindow tracker = new MainTrackerWindow(result);
+                if (tracker.ShowDialog() == true)
+                {
+                    this.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    this.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Error login or password");
+            }
         }
     }
 }
