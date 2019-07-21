@@ -19,7 +19,7 @@ namespace MoneyTracker
     /// </summary>
     public partial class MainTrackerWindow : Window
     {
-        public MainTrackerWindow(int id)
+        public MainTrackerWindow()
         {
             InitializeComponent();
         }
