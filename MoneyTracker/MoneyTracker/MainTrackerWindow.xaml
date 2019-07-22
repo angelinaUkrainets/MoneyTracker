@@ -5,15 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MoneyTracker"
         mc:Ignorable="d"
-        Title="MainTrackerWindow" Height="500" Width="600">
+        Title="MainTrackerWindow" Height="600" Width="700">
     
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Gallery\fone.png" Stretch="UniformToFill"/>
         </Grid.Background>
-        <StackPanel Height="500" Width="100" Background="DimGray" HorizontalAlignment="Left"/>
-        <Viewbox>
-            <Calendar Background="Transparent"/>
-        </Viewbox>
+        <StackPanel>
+            
+        </StackPanel>
     </Grid>
 </Window>
