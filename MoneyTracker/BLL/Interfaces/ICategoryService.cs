@@ -9,6 +9,6 @@ namespace BLL.Interfaces
 {
     public interface ICategoryService
     {
-        int Add(CategoryAddModel category);
+        //int Add(CategoryAddModel category);
     }
 }

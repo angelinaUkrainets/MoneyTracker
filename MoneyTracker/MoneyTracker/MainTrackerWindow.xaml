@@ -6,13 +6,20 @@
         xmlns:local="clr-namespace:MoneyTracker"
         mc:Ignorable="d"
         Title="MainTrackerWindow" Height="600" Width="700">
-    
+
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Gallery\fone.png" Stretch="UniformToFill"/>
         </Grid.Background>
         <StackPanel>
-            
+            <Button x:Name="Category1" Height="30" Width="90" FontSize="10" Foreground="Black"/>
+            <Button x:Name="Category3" Height="30" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left"/>
+            <Button x:Name="Category2" Height="30" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right"/>
+            <Button x:Name="Category4" Height="30" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left"/>
+            <Button x:Name="Category5" Height="30" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right"/>
+            <Button x:Name="Category6" Height="30" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left"/>
+            <Button x:Name="Category7" Height="30" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right"/>
+
         </StackPanel>
     </Grid>
 </Window>

@@ -18,9 +18,9 @@ namespace BLL.Services
         {
             repository = new CategoryRepository(_context);
         }
-        public int Add(CategoryAddModel category)
-        {
+        //public int Add(CategoryAddModel category)
+        //{
 
-        }
+        //}
     }
 }

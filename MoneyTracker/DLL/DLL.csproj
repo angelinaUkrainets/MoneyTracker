@@ -55,6 +55,10 @@
     <Compile Include="Migrations\201907171007255_UserTable.Designer.cs">
       <DependentUpon>201907171007255_UserTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907291839049_Category.cs" />
+    <Compile Include="Migrations\201907291839049_Category.Designer.cs">
+      <DependentUpon>201907291839049_Category.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\CategoryRepository.cs" />
@@ -68,6 +72,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201907171007255_UserTable.resx">
       <DependentUpon>201907171007255_UserTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907291839049_Category.resx">
+      <DependentUpon>201907291839049_Category.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
