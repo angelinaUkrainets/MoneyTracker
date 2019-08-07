@@ -21,5 +21,9 @@ namespace MoneyTracker.Entities
         [Required, EmailAddress] public string Email { get; set; }
 
         [Required, StringLength(30, MinimumLength = 6), DataType(DataType.Password)] public string Password { get; set; }
+
+        [Required] public double CardBalance { get; set; }
+
+        [Required] public double CashBalance { get; set; }
     }
 }
