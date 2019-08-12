@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DLL.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -25,5 +26,7 @@ namespace MoneyTracker.Entities
         [Required] public double CardBalance { get; set; }
 
         [Required] public double CashBalance { get; set; }
+
+        public virtual ICollection<Category> Categories { get; set; }
     }
 }
