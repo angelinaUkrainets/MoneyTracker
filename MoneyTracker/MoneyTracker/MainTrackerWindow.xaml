@@ -12,14 +12,83 @@
             <ImageBrush ImageSource="Gallery\fone.png" Stretch="UniformToFill"/>
         </Grid.Background>
         <StackPanel>
-            <Button x:Name="Category1" Height="30" Width="90" FontSize="10" Foreground="Black"/>
-            <Button x:Name="Category3" Height="30" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left"/>
-            <Button x:Name="Category2" Height="30" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right"/>
-            <Button x:Name="Category4" Height="30" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left"/>
-            <Button x:Name="Category5" Height="30" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right"/>
-            <Button x:Name="Category6" Height="30" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left"/>
-            <Button x:Name="Category7" Height="30" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right"/>
-
+            <Button x:Name="Category1" Height="90" Width="90" FontSize="10" Foreground="Black">
+                <Button.Template>
+                    <ControlTemplate  TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="DarkOrange"></Ellipse>
+                            <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="Category3" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left">
+                <Button.Template>
+                    <ControlTemplate  TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="DarkOrange"></Ellipse>
+                            <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="Category2" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right">
+                <Button.Template>
+                    <ControlTemplate  TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="DarkOrange"></Ellipse>
+                            <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="Category4" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left">
+                    <Button.Template>
+                        <ControlTemplate  TargetType="Button">
+                            <Grid>
+                                <Ellipse Fill="DarkOrange"></Ellipse>
+                                <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            <Button x:Name="Category5" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right">
+                <Button.Template>
+                    <ControlTemplate  TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="DarkOrange"></Ellipse>
+                            <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="Category6" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left">
+                <Button.Template>
+                    <ControlTemplate  TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="DarkOrange"></Ellipse>
+                            <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="Category7" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right">
+                <Button.Template>
+                    <ControlTemplate  TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="DarkOrange"></Ellipse>
+                            <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>
