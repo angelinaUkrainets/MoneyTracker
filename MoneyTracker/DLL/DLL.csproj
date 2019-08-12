@@ -50,7 +50,9 @@
   <ItemGroup>
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\EFContext.cs" />
+    <Compile Include="Entities\Operation.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\WayOfPay.cs" />
     <Compile Include="Migrations\201907171007255_UserTable.cs" />
     <Compile Include="Migrations\201907171007255_UserTable.Designer.cs">
       <DependentUpon>201907171007255_UserTable.cs</DependentUpon>
@@ -62,6 +64,10 @@
     <Compile Include="Migrations\201908121034193_CardCash.cs" />
     <Compile Include="Migrations\201908121034193_CardCash.Designer.cs">
       <DependentUpon>201908121034193_CardCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201908121104270_Databas is done.cs" />
+    <Compile Include="Migrations\201908121104270_Databas is done.Designer.cs">
+      <DependentUpon>201908121104270_Databas is done.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908121034193_CardCash.resx">
       <DependentUpon>201908121034193_CardCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908121104270_Databas is done.resx">
+      <DependentUpon>201908121104270_Databas is done.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
