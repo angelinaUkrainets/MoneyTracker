@@ -39,7 +39,10 @@ namespace MoneyTracker
                 Surname = tbSurname.Text,
                 Email = tbEmail.Text,
                 Login = tbLogin.Text,
-                Password = tbPassword.Text
+                Password = tbPassword.Text,
+                CashBalance = 0,
+                CardBalance = 0,
+                IsFirstEnter = false
             });
 
             if (res > 0)
@@ -49,10 +52,12 @@ namespace MoneyTracker
                 MailAddress from = new MailAddress("moneytrackerrivne@gmail.com", "Money Tracker");
                 MailAddress to = new MailAddress(tbEmail.Text);
                 MailMessage m = new MailMessage(from, to);
+
                 m.Subject = "Welcome to Money Tracker";
                 m.Body = "<h2>Registration was successful</h2>" +
                     "<p>use our program to control your costs and profits</p>";
                 m.IsBodyHtml = true;
+
                 SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
                 smtp.Credentials = new NetworkCredential("moneytrackerrivne@gmail.com", "moneyTracker1234");
                 smtp.EnableSsl = true;

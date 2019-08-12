@@ -28,5 +28,7 @@ namespace MoneyTracker.Entities
         [Required] public double CashBalance { get; set; }
 
         public virtual ICollection<Category> Categories { get; set; }
+
+        [Required] public bool IsFirstEnter { get; set; } 
     }
 }

@@ -13,5 +13,8 @@ namespace BLL.Models
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }
+        public double CashBalance { get; set; }
+        public double CardBalance { get; set; }
+        public bool IsFirstEnter { get; set; }
     }
 }
