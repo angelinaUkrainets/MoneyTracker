@@ -41,8 +41,7 @@ namespace MoneyTracker
                 Login = tbLogin.Text,
                 Password = tbPassword.Text,
                 CashBalance = 0,
-                CardBalance = 0,
-                IsFirstEnter = false
+                CardBalance = 0
             });
 
             if (res > 0)
@@ -63,8 +62,8 @@ namespace MoneyTracker
                 smtp.EnableSsl = true;
                 smtp.Send(m);
 
-                BalanceWindow balance = new BalanceWindow();
-                balance.ShowDialog();
+                MainWindow login = new MainWindow();
+                login.ShowDialog();
             }
 
             else

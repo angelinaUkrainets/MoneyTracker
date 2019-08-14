@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MoneyTracker"
         mc:Ignorable="d"
-       Title="Registration" Height="400" Width="300" ResizeMode="NoResize" WindowStyle="SingleBorderWindow">
+       Title="Registration" Height="500" Width="300" ResizeMode="NoResize" WindowStyle="SingleBorderWindow">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Gallery\fone.png" Stretch="UniformToFill"/>
@@ -22,7 +22,12 @@
         <TextBox x:Name="tbLogin" Foreground="White" Background="Transparent"/>
         <Label Content="Password :" FontSize="14" Foreground="White" HorizontalAlignment="Left"/>
         <TextBox x:Name="tbPassword" Foreground="White" Background="Transparent"/>
-        <Button x:Name="btnSave" Content="Save" Height="30" Width="90" FontSize="10" HorizontalAlignment="Center" Margin="0, 10, 0, 0" Click="BtnSave_Click"/>
+        <Label Content="Cash Balance :" FontSize="14" Foreground="White" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbCash" Foreground="White" Background="Transparent"/>
+        <Label Content="Card Balance :" FontSize="14" Foreground="White" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tbCard" Foreground="White" Background="Transparent"/>
+
+            <Button x:Name="btnSave" Content="Save" Height="30" Width="90" FontSize="10" HorizontalAlignment="Center" Margin="0, 10, 0, 0" Click="BtnSave_Click"/>
         </StackPanel>
     </Grid>
 </Window>

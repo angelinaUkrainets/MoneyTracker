@@ -15,6 +15,5 @@ namespace BLL.Models
         public string Email { get; set; }
         public double CashBalance { get; set; }
         public double CardBalance { get; set; }
-        public bool IsFirstEnter { get; set; }
     }
 }
