@@ -63,8 +63,8 @@ namespace MoneyTracker
                 smtp.EnableSsl = true;
                 smtp.Send(m);
 
-                MainWindow login = new MainWindow();
-                login.ShowDialog();
+                BalanceWindow balance = new BalanceWindow();
+                balance.ShowDialog();
             }
 
             else

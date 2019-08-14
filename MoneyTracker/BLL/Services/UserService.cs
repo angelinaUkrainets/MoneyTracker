@@ -30,12 +30,9 @@ namespace BLL.Services
         {
             int result = -1;
             User newUser;
-            if (user.Password == user.Password)
-            {
-                newUser = new User() { Login = user.Login, Password = user.Password, Name = user.Name, Surname = user.Surname, Email = user.Email };
-                repository.Add(newUser);
-                result = 1;
-            }
+            newUser = new User() { Login = user.Login, Password = user.Password, Name = user.Name, Surname = user.Surname, Email = user.Email };
+            repository.Add(newUser);
+            result = 1;
 
             return result;
         }

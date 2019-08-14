@@ -1,0 +1,23 @@
+﻿<Window x:Class="MoneyTracker.BalanceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoneyTracker"
+        mc:Ignorable="d"
+        Icon="Gallery\icon.ico"
+        Title="BalanceWindow" Height="250" Width="300" ResizeMode="NoResize" WindowStyle="SingleBorderWindow">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Gallery\fone.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <StackPanel>
+            <Label Content="Record Balance" FontSize="15" Foreground="White" FontWeight="Medium" HorizontalAlignment="Center"/>
+            <Label Content="Card Balance :" FontSize="15" Foreground="White" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <TextBox x:Name="tbCardBalance" Foreground="White"/>
+            <Label Content="Cash Balance :" FontSize="15" Foreground="White" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left"/>
+            <TextBox x:Name="tbCashBalance" Foreground="White"/>
+            <Button x:Name="btnSaveBalance" Content="Save" Height="30" Width="90" HorizontalAlignment="Center" FontSize="10" Margin="0, 20, 0, 20" Click="BtnSaveBalance_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
