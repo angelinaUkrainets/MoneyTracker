@@ -43,6 +43,8 @@ namespace MoneyTracker
             {
                 Login = tbLogin.Text,
                 Password = pbPassword.Password
+                
+                
             });
             if (result > 0)
             {
