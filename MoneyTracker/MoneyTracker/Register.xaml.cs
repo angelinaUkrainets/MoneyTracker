@@ -41,8 +41,7 @@ namespace MoneyTracker
                 Login = tbLogin.Text,
                 Password = tbPassword.Text,
                 CashBalance = 0,
-                CardBalance = 0,
-                IsFirstEnter = false
+                CardBalance = 0
             });
 
             if (res > 0)

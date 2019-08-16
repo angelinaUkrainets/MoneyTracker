@@ -20,5 +20,7 @@ namespace DLL.Entities
         public virtual User UserOf { get; set; }
 
         public virtual ICollection<Operation> Operations { get; set; }
+
+        public double Summ { get; set; }
     }
 }
