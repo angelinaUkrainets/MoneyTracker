@@ -5,14 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MoneyTracker"
         mc:Ignorable="d"
-        Title="MainTrackerWindow" Height="600" Width="700">
+        Title="MainTrackerWindow" Height="800" Width="900">
 
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Gallery\fone.png" Stretch="UniformToFill"/>
         </Grid.Background>
-        <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="200*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="93*"/>
+                <RowDefinition Height="93"/>
+                <RowDefinition Height="494*"/>
+            </Grid.RowDefinitions>
+
             <Button x:Name="Category1" Height="90" Width="90" FontSize="10" Foreground="Black">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+
+            <Button x:Name="Category2" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="29.571,0,401,0" Grid.Column="3">
                 <Button.Template>
                     <ControlTemplate  TargetType="Button">
                         <Grid>
@@ -23,7 +46,18 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button x:Name="Category3" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left">
+            <Button x:Name="Category3" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right" VerticalAlignment="Top" Grid.Column="3">
+                <Button.Template>
+                    <ControlTemplate  TargetType="{x:Type Button}">
+                        <Grid>
+                            <Ellipse Fill="DarkOrange"/>
+                            <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button x:Name="Category4" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left" RenderTransformOrigin="0.651,-0.724" Margin="0,73,0,406" Grid.Row="2">
                 <Button.Template>
                     <ControlTemplate  TargetType="Button">
                         <Grid>
@@ -34,7 +68,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button x:Name="Category2" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right">
+            <Button x:Name="Category5" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right" Margin="0,73,0,406" Grid.Row="2" Grid.Column="3">
                 <Button.Template>
                     <ControlTemplate  TargetType="Button">
                         <Grid>
@@ -45,18 +79,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button x:Name="Category4" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left">
-                    <Button.Template>
-                        <ControlTemplate  TargetType="Button">
-                            <Grid>
-                                <Ellipse Fill="DarkOrange"></Ellipse>
-                                <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
-                               VerticalAlignment="Center"></Label>
-                            </Grid>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-            <Button x:Name="Category5" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right">
+            <Button x:Name="Category6" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left" Margin="0,73,0,406" Grid.Row="2">
                 <Button.Template>
                     <ControlTemplate  TargetType="Button">
                         <Grid>
@@ -67,7 +90,7 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button x:Name="Category6" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Left">
+            <Button x:Name="Category7" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right" Margin="0,73,0,406" Grid.Row="2" Grid.Column="3">
                 <Button.Template>
                     <ControlTemplate  TargetType="Button">
                         <Grid>
@@ -78,17 +101,6 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
-            <Button x:Name="Category7" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Right">
-                <Button.Template>
-                    <ControlTemplate  TargetType="Button">
-                        <Grid>
-                            <Ellipse Fill="DarkOrange"></Ellipse>
-                            <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
-                               VerticalAlignment="Center"></Label>
-                        </Grid>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
-        </StackPanel>
+        </Grid>
     </Grid>
 </Window>
