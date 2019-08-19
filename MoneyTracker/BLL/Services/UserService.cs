@@ -30,7 +30,7 @@ namespace BLL.Services
         {
             int result = -1;
             User newUser;
-            newUser = new User() { Login = user.Login, Password = user.Password, Name = user.Name, Surname = user.Surname, Email = user.Email };
+            newUser = new User() { Login = user.Login, Password = user.Password, Name = user.Name, Surname = user.Surname, Email = user.Email, CardBalance = user.CardBalance, CashBalance = user.CashBalance };
             repository.Add(newUser);
             result = 1;
 

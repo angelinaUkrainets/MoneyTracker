@@ -33,6 +33,9 @@ namespace MoneyTracker
 
         private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
+            var cashBal = double.Parse(tbCash.Text);
+            var cardBal = double.Parse(tbCard.Text);
+
             int res = _userService.Register(new UserRegistrationModel()
             {
                 Name = tbName.Text,
@@ -40,8 +43,8 @@ namespace MoneyTracker
                 Email = tbEmail.Text,
                 Login = tbLogin.Text,
                 Password = tbPassword.Text,
-                CashBalance = 0,
-                CardBalance = 0
+                CashBalance = cashBal,
+                CardBalance = cardBal
             });
 
             if (res > 0)
