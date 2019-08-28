@@ -28,13 +28,22 @@ namespace BLL.Services
         }
         public int Register(UserRegistrationModel user)
         {
-            int result = -1;
-            User newUser;
-            newUser = new User() { Login = user.Login, Password = user.Password, Name = user.Name, Surname = user.Surname, Email = user.Email, CardBalance = user.CardBalance, CashBalance = user.CashBalance };
-            repository.Add(newUser);
-            result = 1;
+            try
+            {
+                int result = -1;
+                User newUser;
+                newUser = new User() { Login = user.Login, Password = user.Password, Name = user.Name, Surname = user.Surname, Email = user.Email, CardBalance = user.CardBalance, CashBalance = user.CashBalance };
+                repository.Add(newUser);
+                result = 1;
+                return result;
+            }
+            catch (Exception ex)
+            {
 
-            return result;
+                throw ex;
+            }
+
+           
         }
     }
 }

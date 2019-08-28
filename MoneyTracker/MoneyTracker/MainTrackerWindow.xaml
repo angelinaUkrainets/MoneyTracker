@@ -28,7 +28,7 @@
                 <RowDefinition Height="199*"/>
             </Grid.RowDefinitions>
 
-            <Button x:Name="Category1" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="0" Margin="66,1,67,2">
+            <Button x:Name="Category1" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="0" Margin="66,1,67,2">
                 <!--<Button.Template>
                     <ControlTemplate  TargetType="Button">
                         <Grid>
@@ -38,9 +38,7 @@
                         </Grid>
                     </ControlTemplate>
                 </Button.Template>-->
-                <Button.Background>
-                    <ImageBrush ImageSource="Gallery\clothing.png" Stretch="UniformToFill"/>
-                </Button.Background>
+                <Image  Source="Gallery\clothing.png" Stretch="UniformToFill"/>
             </Button>
 
             <Button x:Name="Category2" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="1" Margin="67,1,66,2">

@@ -35,21 +35,28 @@ namespace MoneyTracker
         {
             var cashBal = double.Parse(tbCash.Text);
             var cardBal = double.Parse(tbCard.Text);
-
-            int res = _userService.Register(new UserRegistrationModel()
+            int res = 0;
+            try
             {
-                Name = tbName.Text,
-                Surname = tbSurname.Text,
-                Email = tbEmail.Text,
-                Login = tbLogin.Text,
-                Password = tbPassword.Text,
-                CashBalance = cashBal,
-                CardBalance = cardBal
-            });
+                res = _userService.Register(new UserRegistrationModel()
+                {
+                    Name = tbName.Text,
+                    Surname = tbSurname.Text,
+                    Email = tbEmail.Text,
+                    Login = tbLogin.Text,
+                    Password = tbPassword.Text,
+                    CashBalance = cashBal,
+                    CardBalance = cardBal
+                });
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
             if (res > 0)
             {
-                this.Close();
 
                 MailAddress from = new MailAddress("moneytrackerrivne@gmail.com", "Money Tracker");
                 MailAddress to = new MailAddress(tbEmail.Text);
