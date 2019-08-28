@@ -140,5 +140,19 @@
   <ItemGroup>
     <Resource Include="icon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\plus-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\clothing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\Dining.png" />
+    <Resource Include="Gallery\education.png" />
+    <Resource Include="Gallery\freetime.png" />
+    <Resource Include="Gallery\health.png" />
+    <Resource Include="Gallery\home.png" />
+    <Resource Include="Gallery\transport.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

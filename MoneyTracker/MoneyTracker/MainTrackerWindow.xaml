@@ -21,11 +21,15 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="93*"/>
                 <RowDefinition Height="93"/>
-                <RowDefinition Height="494*"/>
+                <RowDefinition Height="93*"/>
+                <RowDefinition Height="93*"/>
+                <RowDefinition Height="93*"/>
+                <RowDefinition Height="93*"/>
+                <RowDefinition Height="199*"/>
             </Grid.RowDefinitions>
 
-            <Button x:Name="Category1" Height="90" Width="90" FontSize="10" Foreground="Black">
-                <Button.Template>
+            <Button x:Name="Category1" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="0" Margin="66,1,67,2">
+                <!--<Button.Template>
                     <ControlTemplate  TargetType="Button">
                         <Grid>
                             <Ellipse Fill="DarkOrange"></Ellipse>
@@ -33,11 +37,21 @@
                                VerticalAlignment="Center"></Label>
                         </Grid>
                     </ControlTemplate>
-                </Button.Template>
+                </Button.Template>-->
+                <Button.Background>
+                    <ImageBrush ImageSource="Gallery\clothing.png" Stretch="UniformToFill"/>
+                </Button.Background>
             </Button>
 
-            <Button x:Name="Category2" Height="90" Width="90" FontSize="10" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="29.571,0,401,0" Grid.Column="3">
-                <Button.Template>
+            <Button x:Name="Category2" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="1" Margin="67,1,66,2">
+
+                <Button.Background>
+                    <ImageBrush ImageSource="Gallery\Dining.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="Category3" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="2" Margin="66,1,67,2">
+                <!--<Button.Template>
                     <ControlTemplate  TargetType="Button">
                         <Grid>
                             <Ellipse Fill="DarkOrange"></Ellipse>
@@ -45,7 +59,76 @@
                                VerticalAlignment="Center"></Label>
                         </Grid>
                     </ControlTemplate>
-                </Button.Template>
+                </Button.Template>-->
+                <Button.Background>
+                    <ImageBrush ImageSource="Gallery\education.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="Category4" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="3" Margin="67,1,66,2">
+                <!--<Button.Template>
+                    <ControlTemplate  TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="DarkOrange"></Ellipse>
+                            <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>-->
+                <Button.Background>
+                    <ImageBrush ImageSource="Gallery\freetime.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="Category5" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="0" Margin="67,1,66,5">
+                <!--<Button.Template>
+                    <ControlTemplate  TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="DarkOrange"></Ellipse>
+                            <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>-->
+                <Button.Background>
+                    <ImageBrush ImageSource="Gallery\health.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="Category6" FontSize="10" Foreground="Black" Grid.Row="5" Grid.Column="0" Margin="67,1,66,5">
+                <!--<Button.Template>
+                    <ControlTemplate  TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="DarkOrange"></Ellipse>
+                            <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>-->
+                <Button.Background>
+                    <ImageBrush ImageSource="Gallery\home.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            
+
+            <Button x:Name="Category7" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="3" Margin="67,1,66,5">
+                <!--<Button.Template>
+                    <ControlTemplate  TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="DarkOrange"></Ellipse>
+                            <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                        </Grid>
+                    </ControlTemplate>
+                </Button.Template>-->
+                <Button.Background>
+                    <ImageBrush ImageSource="Gallery\transport.png" Stretch="UniformToFill"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Pluss" FontSize="10" Foreground="Black" Grid.Row="5" Grid.Column="3" Margin="67,1,66,5">
+                <Button.Background>
+                    <ImageBrush ImageSource="Gallery\plus-button.png" Stretch="UniformToFill"/>
+                </Button.Background>
             </Button>
         </Grid>
     </Grid>
