@@ -29,5 +29,6 @@ namespace MoneyTracker
             PlusWindow window = new PlusWindow();
             window.ShowDialog();
         }
+
     }
 }
