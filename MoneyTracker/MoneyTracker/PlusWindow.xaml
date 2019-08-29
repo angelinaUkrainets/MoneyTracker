@@ -4,12 +4,23 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MoneyTracker"
+        xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="PlusWindow" Height="400" Width="400">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Gallery\fone.png" Stretch="UniformToFill"/>
         </Grid.Background>
+        <Grid.Resources>
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Foreground" Value="DarkOrange"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100*"/>
@@ -53,7 +64,7 @@
             </Button.Template>
             <Image  Source="Gallery\tick.png" />
         </Button>
-        
+
         <Button x:Name="New_Button" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="2" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -66,5 +77,16 @@
             </Button.Template>
             <Image  Source="Gallery\new.png" />
         </Button>
+        <dragablz:TabablzControl Grid.Row="2" ItemContainerStyle="{StaticResource NormalTabItemStyle}"  FixedHeaderCount="2" Grid.RowSpan="5" Grid.ColumnSpan="5">
+            <dragablz:TabablzControl.InterTabController>
+                <dragablz:InterTabController/>
+            </dragablz:TabablzControl.InterTabController>
+            <TabItem Header="COST CATEGORY" Width="200" HorizontalAlignment="Stretch">
+                <TextBlock Text="Hello World!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </TabItem>
+            <TabItem Header="TARGET" Width="200">
+                <TextBlock Text="Amazing designs!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </TabItem>
+        </dragablz:TabablzControl>
     </Grid>
 </Window>
