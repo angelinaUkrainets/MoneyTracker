@@ -74,6 +74,9 @@
     <Compile Include="MainTrackerWindow.xaml.cs">
       <DependentUpon>MainTrackerWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PlusWindow.xaml.cs">
+      <DependentUpon>PlusWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
@@ -93,6 +96,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MainTrackerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlusWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -160,6 +167,15 @@
     <Resource Include="Gallery\health.png" />
     <Resource Include="Gallery\home.png" />
     <Resource Include="Gallery\transport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\tick.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
