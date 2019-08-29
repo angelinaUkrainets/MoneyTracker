@@ -15,19 +15,13 @@ using System.Windows.Shapes;
 namespace MoneyTracker
 {
     /// <summary>
-    /// Interaction logic for MainTrackerWindow.xaml
+    /// Interaction logic for PlusWindow.xaml
     /// </summary>
-    public partial class MainTrackerWindow : Window
+    public partial class PlusWindow : Window
     {
-        public MainTrackerWindow(int res)
+        public PlusWindow()
         {
             InitializeComponent();
-        }
-
-        private void Pluss_Click(object sender, RoutedEventArgs e)
-        {
-            PlusWindow window = new PlusWindow();
-            window.ShowDialog();
         }
     }
 }

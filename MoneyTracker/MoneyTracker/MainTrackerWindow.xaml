@@ -123,7 +123,9 @@
                     <ImageBrush ImageSource="Gallery\transport.png" Stretch="UniformToFill"/>
                 </Button.Background>
             </Button>
-            <Button x:Name="Pluss" FontSize="10" Foreground="Black" Grid.Row="5" Grid.Column="3" Margin="67,1,66,5">
+            
+            
+            <Button x:Name="Pluss" FontSize="10" Foreground="Black" Grid.Row="5" Grid.Column="3" Margin="67,1,66,5" Click="Pluss_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="Gallery\plus-button.png" Stretch="UniformToFill"/>
                 </Button.Background>
