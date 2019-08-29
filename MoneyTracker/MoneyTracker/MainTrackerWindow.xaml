@@ -113,14 +113,14 @@
                         <Ellipse Fill="DarkOrange"></Ellipse>
                         <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
                                VerticalAlignment="Center"></Label>
-                        </Grid>
-                    </ControlTemplate>
-                </Button.Template>-->
-                <Button.Background>
-                    <ImageBrush ImageSource="Gallery\transport.png" Stretch="UniformToFill"/>
-                </Button.Background>
-            </Button>
-            <Button x:Name="Pluss" FontSize="10" Foreground="Black" Grid.Row="5" Grid.Column="3"  Height="70" Width="70">
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template> -->
+            <Button.Background>
+                <ImageBrush ImageSource="Gallery\transport.png" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Pluss" FontSize="10" Foreground="Black" Grid.Row="5" Grid.Column="3"  Height="70" Width="70" Click="Pluss_Click">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
                     <Grid>
@@ -132,6 +132,5 @@
             </Button.Template>
             <Image  Source="Gallery\plus-button.png" />
         </Button>
-        </Grid>
     </Grid>
 </Window>

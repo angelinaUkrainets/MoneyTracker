@@ -27,7 +27,44 @@
             <RowDefinition Height="93*"/>
             <RowDefinition Height="199*"/>
         </Grid.RowDefinitions>
+
+        <Button x:Name="Cancel_Button" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="0" Grid.Column="0" Height="30" Width="30" Opacity="0.8" Click="Cancel_Button_Click">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\close.png" />
+        </Button>
+
+        <Button x:Name="Done_Button" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="0" Grid.Column="4" Height="30" Width="30" Opacity="0.8">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\tick.png" />
+        </Button>
         
-        
+        <Button x:Name="New_Button" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="2" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\new.png" />
+        </Button>
     </Grid>
 </Window>
