@@ -1,4 +1,5 @@
 ﻿using DLL.Entities;
+using MoneyTracker.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,13 +36,26 @@ namespace MoneyTracker
 
         private void Done_Button_Click(object sender, RoutedEventArgs e)
         {
-            _context.Categories.Add(new Category()
+            try
             {
-                Name = tbNameCategory.Text,
-                UserId = IdUser, 
-                Summ = 0
-            });
-            _context.SaveChanges();
+                _context.Categories.Add(new Category()
+                {
+                    Name = tbNameCategory.Text,
+                    UserId = IdUser,
+                    Summ = 0
+                });
+                _context.SaveChanges();
+            }
+            catch {
+                MessageBox.Show("Cannot add category");
+            };
+        }
+
+        private void New_Button_Click(object sender, RoutedEventArgs e)
+        {
+            IconWindow icon = new IconWindow();
+            this.Close();
+            icon.ShowDialog();
         }
     }
 }

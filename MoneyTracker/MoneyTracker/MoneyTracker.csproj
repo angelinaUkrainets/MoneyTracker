@@ -74,6 +74,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="IconWindow.xaml.cs">
+      <DependentUpon>IconWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainTrackerWindow.xaml.cs">
       <DependentUpon>MainTrackerWindow.xaml</DependentUpon>
     </Compile>
@@ -83,6 +86,10 @@
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
+    <Page Include="IconWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -176,6 +183,30 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Gallery\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\dog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\cake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\giftbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\blueprint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\cosmetics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\recycle-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\shower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\heart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
