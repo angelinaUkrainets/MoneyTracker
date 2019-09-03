@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DLL.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,14 +20,28 @@ namespace MoneyTracker
     /// </summary>
     public partial class PlusWindow : Window
     {
-        public PlusWindow()
+        private readonly int IdUser;
+        private EFContext _context = new EFContext();
+        public PlusWindow(int res)
         {
             InitializeComponent();
+            IdUser = res;
         }
 
         private void Cancel_Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void Done_Button_Click(object sender, RoutedEventArgs e)
+        {
+            _context.Categories.Add(new Category()
+            {
+                Name = tbNameCategory.Text,
+                UserId = IdUser, 
+                Summ = 0
+            });
+            _context.SaveChanges();
         }
     }
 }

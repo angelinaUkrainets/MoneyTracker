@@ -22,5 +22,6 @@ namespace DLL.Entities
         public virtual ICollection<Operation> Operations { get; set; }
 
         public double Summ { get; set; }
+        
     }
 }

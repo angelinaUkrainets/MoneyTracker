@@ -52,7 +52,7 @@
             <Image  Source="Gallery\close.png" />
         </Button>
 
-        <Button x:Name="Done_Button" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="0" Grid.Column="4" Height="30" Width="30" Opacity="0.8">
+        <Button x:Name="Done_Button" Click="Done_Button_Click" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="0" Grid.Column="4" Height="30" Width="30" Opacity="0.8">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
                     <Grid>

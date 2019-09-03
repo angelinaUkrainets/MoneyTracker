@@ -20,14 +20,21 @@ namespace MoneyTracker
     /// </summary>
     public partial class MainTrackerWindow : Window
     {
+        private readonly int IdUser;
         public MainTrackerWindow(int res)
         {
             InitializeComponent();
+            IdUser = res;
         }
 
         private void Pluss_Click(object sender, RoutedEventArgs e)
         {
-            PlusWindow window = new PlusWindow();
+            //Button button = new Button();
+            //button.Content = "wadawd";
+            //button.Height = 80;
+            //button.Width = 150;
+            //grid.Children.Add(button);
+            PlusWindow window = new PlusWindow(IdUser);
             window.ShowDialog();
         }
     }
