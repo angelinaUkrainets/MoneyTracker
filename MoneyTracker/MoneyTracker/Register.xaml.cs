@@ -79,7 +79,7 @@ namespace MoneyTracker
                 MainWindow login = new MainWindow();
                 login.ShowDialog();
 
-                
+                this.Close();
             }
 
             else

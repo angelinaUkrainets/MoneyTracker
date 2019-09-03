@@ -30,5 +30,47 @@ namespace MoneyTracker
             PlusWindow window = new PlusWindow();
             window.ShowDialog();
         }
+
+        private void Category1_Click(object sender, RoutedEventArgs e)
+        {
+            CostWindow window = new CostWindow();
+            window.ShowDialog();
+        }
+
+        private void Category2_Click(object sender, RoutedEventArgs e)
+        {
+            CostWindow window = new CostWindow();
+            window.ShowDialog();
+        }
+
+        private void Category3_Click(object sender, RoutedEventArgs e)
+        {
+            CostWindow window = new CostWindow();
+            window.ShowDialog();
+        }
+
+        private void Category4_Click(object sender, RoutedEventArgs e)
+        {
+            CostWindow window = new CostWindow();
+            window.ShowDialog();
+        }
+
+        private void Category5_Click(object sender, RoutedEventArgs e)
+        {
+            CostWindow window = new CostWindow();
+            window.ShowDialog();
+        }
+
+        private void Category6_Click(object sender, RoutedEventArgs e)
+        {
+            CostWindow window = new CostWindow();
+            window.ShowDialog();
+        }
+
+        private void Category7_Click(object sender, RoutedEventArgs e)
+        {
+            CostWindow window = new CostWindow();
+            window.ShowDialog();
+        }
     }
 }

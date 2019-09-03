@@ -1,0 +1,73 @@
+﻿<Window x:Class="MoneyTracker.CostWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoneyTracker"
+        xmlns:dragablz="http://dragablz.net/winfx/xaml/dragablz"
+        mc:Ignorable="d"
+        Title="CostWindow" Height="300" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="180*"/>
+            <ColumnDefinition Width="220*"/>
+            <ColumnDefinition Width="180*"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="115*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="Gallery\fone.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+       
+        <Button x:Name="Cancel_Button" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="0" Grid.Column="0" Height="30" Width="30" Opacity="0.8" Click="Cancel_Button_Click" >
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\close.png" />
+        </Button>
+        <Button x:Name="Done_Button" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="0" Grid.Column="4" Height="30" Width="30" Opacity="0.8" >
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\tick.png" />
+        </Button>
+<dragablz:TabablzControl Grid.Row="2" ItemContainerStyle="{StaticResource NormalTabItemStyle}"  FixedHeaderCount="2" Grid.RowSpan="5" Grid.ColumnSpan="5">
+            <dragablz:TabablzControl.InterTabController>
+                <dragablz:InterTabController/>
+            </dragablz:TabablzControl.InterTabController>
+            
+            <TabItem Header="CASH" Width="200" HorizontalAlignment="Stretch">
+                <StackPanel>
+                    <Label Content="Enter cost :" FontSize="15" Foreground="#213B59" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="tbEnterCostCash" Foreground="#213B59" FontSize="15" HorizontalAlignment="Center" Width="200"/>
+                </StackPanel>
+                
+            </TabItem>
+            <TabItem Header="CARD" Width="200">
+                <StackPanel>
+                <Label Content="Enter cost :" FontSize="15" Foreground="#213B59" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"/>
+                <TextBox x:Name="tbEnterCostCard" Foreground="#213B59" FontSize="15" HorizontalAlignment="Center" Width="200"/>
+                </StackPanel>
+            </TabItem>
+        </dragablz:TabablzControl>
+    </Grid>
+</Window>

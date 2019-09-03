@@ -24,10 +24,11 @@
             <RowDefinition Height="93*"/>
             <RowDefinition Height="93*"/>
             <RowDefinition Height="93*"/>
-            <RowDefinition Height="199*"/>
+            <RowDefinition Height="93*"/>
+            <RowDefinition Height="93*"/>
         </Grid.RowDefinitions>
 
-        <Button x:Name="Category1" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="0" Height="70" Width="70">
+        <Button x:Name="Category1" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="0" Height="70" Width="70" Click="Category1_Click">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
                     <Grid>
@@ -40,7 +41,7 @@
             <Image  Source="Gallery\clothing.png" />
         </Button>
 
-        <Button x:Name="Category2" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="1"  Height="70" Width="70">
+        <Button x:Name="Category2" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="1"  Height="70" Width="70" Click="Category2_Click">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
                     <Grid>
@@ -53,7 +54,7 @@
             <Image  Source="Gallery\Dining.png" />
         </Button>
 
-        <Button x:Name="Category3" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="2"  Height="70" Width="70">
+        <Button x:Name="Category3" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="2"  Height="70" Width="70" Click="Category3_Click">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
                     <Grid>
@@ -66,7 +67,7 @@
             <Image  Source="Gallery\education.png" />
         </Button>
 
-        <Button x:Name="Category4" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="3"  Height="70" Width="70">
+        <Button x:Name="Category4" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="3"  Height="70" Width="70" Click="Category4_Click">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
                     <Grid>
@@ -79,7 +80,7 @@
             <Image  Source="Gallery\freetime.png" />
         </Button>
 
-        <Button x:Name="Category5" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="0"  Height="70" Width="70">
+        <Button x:Name="Category5" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="0"  Height="70" Width="70" Click="Category5_Click">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
                     <Grid>
@@ -92,7 +93,7 @@
             <Image  Source="Gallery\health.png" />
         </Button>
 
-        <Button x:Name="Category6" FontSize="10" Foreground="Black" Grid.Row="5" Grid.Column="0"  Height="70" Width="70">
+        <Button x:Name="Category6" FontSize="10" Foreground="Black" Grid.Row="5" Grid.Column="0"  Height="70" Width="70" Click="Category6_Click">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
                     <Grid>
@@ -106,7 +107,7 @@
         </Button>
 
 
-        <Button x:Name="Category7" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="3"  Height="70" Width="70">
+        <Button x:Name="Category7" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="3"  Height="70" Width="70" Click="Category7_Click">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
                     <Grid>
