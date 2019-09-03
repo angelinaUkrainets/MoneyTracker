@@ -7,7 +7,7 @@
         xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="PlusWindow" Height="400" Width="400">
+        Title="PlusWindow" Height="300" Width="400">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Gallery\fone.png" Stretch="UniformToFill"/>
@@ -30,7 +30,7 @@
             <ColumnDefinition Width="100*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="100*"/>
+            <RowDefinition Height="140*"/>
             <RowDefinition Height="93"/>
             <RowDefinition Height="93*"/>
             <RowDefinition Height="93*"/>
@@ -81,11 +81,19 @@
             <dragablz:TabablzControl.InterTabController>
                 <dragablz:InterTabController/>
             </dragablz:TabablzControl.InterTabController>
+            
             <TabItem Header="COST CATEGORY" Width="200" HorizontalAlignment="Stretch">
-                <TextBlock Text="Hello World!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <StackPanel>
+                    <Label Content="Enter name of category :" FontSize="15" Foreground="#213B59" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"/>
+                    <TextBox x:Name="tbNameCategory" Foreground="#213B59" FontSize="15" HorizontalAlignment="Center" Width="200"/>
+                </StackPanel>
+                
             </TabItem>
             <TabItem Header="TARGET" Width="200">
-                <TextBlock Text="Amazing designs!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <StackPanel>
+                <Label Content="Enter target name :" FontSize="15" Foreground="#213B59" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center"/>
+                <TextBox x:Name="tbTargetCategory" Foreground="#213B59" FontSize="15" HorizontalAlignment="Center" Width="200"/>
+                </StackPanel>
             </TabItem>
         </dragablz:TabablzControl>
     </Grid>
