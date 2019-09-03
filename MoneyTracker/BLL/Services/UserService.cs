@@ -35,6 +35,49 @@ namespace BLL.Services
                 newUser = new User() { Login = user.Login, Password = user.Password, Name = user.Name, Surname = user.Surname, Email = user.Email, CardBalance = user.CardBalance, CashBalance = user.CashBalance };
                 repository.Add(newUser);
                 result = 1;
+                _context.Categories.Add(new Category()
+                {
+                    Name = "Clothing",
+                    Summ = 0,
+                    UserId = newUser.ID
+                });
+                _context.Categories.Add(new Category()
+                {
+                    Name = "Dining",
+                    Summ = 0,
+                    UserId = newUser.ID
+                });
+                _context.Categories.Add(new Category()
+                {
+                    Name = "Education",
+                    Summ = 0,
+                    UserId = newUser.ID
+                });
+                _context.Categories.Add(new Category()
+                {
+                    Name = "Freetime",
+                    Summ = 0,
+                    UserId = newUser.ID
+                });
+                _context.Categories.Add(new Category()
+                {
+                    Name = "Health",
+                    Summ = 0,
+                    UserId = newUser.ID
+                });
+                _context.Categories.Add(new Category()
+                {
+                    Name = "Home",
+                    Summ = 0,
+                    UserId = newUser.ID
+                });
+                _context.Categories.Add(new Category()
+                {
+                    Name = "Transport",
+                    Summ = 0,
+                    UserId = newUser.ID
+                });
+                _context.SaveChanges();
                 return result;
             }
             catch (Exception ex)

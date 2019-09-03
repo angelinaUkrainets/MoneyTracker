@@ -52,49 +52,7 @@ namespace MoneyTracker
                     CardBalance = cardBal
                 };
                 res = _userService.Register(user);
-                context.Categories.Add(new Category()
-                {
-                    Name = "Clothing",
-                    Summ = 0,
-                    UserId = user.Id
-                });
-                context.Categories.Add(new Category()
-                {
-                    Name = "Dining",
-                    Summ = 0,
-                    UserId = user.Id
-                });
-                context.Categories.Add(new Category()
-                {
-                    Name = "Education",
-                    Summ = 0,
-                    UserId = user.Id
-                });
-                context.Categories.Add(new Category()
-                {
-                    Name = "Freetime",
-                    Summ = 0,
-                    UserId = user.Id
-                });
-                context.Categories.Add(new Category()
-                {
-                    Name = "Health",
-                    Summ = 0,
-                    UserId = user.Id
-                });
-                context.Categories.Add(new Category()
-                {
-                    Name = "Home",
-                    Summ = 0,
-                    UserId = user.Id
-                });
-                context.Categories.Add(new Category()
-                {
-                    Name = "Transport",
-                    Summ = 0,
-                    UserId = user.Id
-                });
-                context.SaveChanges();
+                
             }
             catch (Exception ex)
             {
