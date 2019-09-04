@@ -74,7 +74,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-	  <Compile Include="IconWindow.xaml.cs">
+    <Compile Include="CostWindow.xaml.cs">
+      <DependentUpon>CostWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IconWindow.xaml.cs">
       <DependentUpon>IconWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainTrackerWindow.xaml.cs">
@@ -86,6 +89,10 @@
     <Compile Include="Register.xaml.cs">
       <DependentUpon>Register.xaml</DependentUpon>
     </Compile>
+    <Page Include="CostWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
