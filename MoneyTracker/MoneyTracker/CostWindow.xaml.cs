@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,11 +22,6 @@ namespace MoneyTracker
         public CostWindow()
         {
             InitializeComponent();
-        }
-
-        private void Cancel_Button_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
     }
 }
