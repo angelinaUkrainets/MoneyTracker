@@ -23,5 +23,20 @@ namespace MoneyTracker.Windows
         {
             InitializeComponent();
         }
+
+        private void Cancel_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Done_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void New_Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

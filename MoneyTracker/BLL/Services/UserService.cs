@@ -39,42 +39,49 @@ namespace BLL.Services
                 {
                     Name = "Clothing",
                     Summ = 0,
-                    UserId = newUser.ID
+                    UserId = newUser.ID,
+                    ImageSource = @"Gallery\clothing.png"
                 });
                 _context.Categories.Add(new Category()
                 {
                     Name = "Dining",
                     Summ = 0,
-                    UserId = newUser.ID
+                    UserId = newUser.ID,
+                    ImageSource = @"Gallery\Dining.png"
                 });
                 _context.Categories.Add(new Category()
                 {
                     Name = "Education",
                     Summ = 0,
+                    ImageSource = @"Gallery\education.png",
                     UserId = newUser.ID
                 });
                 _context.Categories.Add(new Category()
                 {
                     Name = "Freetime",
                     Summ = 0,
+                    ImageSource = @"Gallery\freetime.png",
                     UserId = newUser.ID
                 });
                 _context.Categories.Add(new Category()
                 {
                     Name = "Health",
                     Summ = 0,
+                    ImageSource = @"Gallery\health.png",
                     UserId = newUser.ID
                 });
                 _context.Categories.Add(new Category()
                 {
                     Name = "Home",
                     Summ = 0,
-                    UserId = newUser.ID
+                    UserId = newUser.ID,
+                    ImageSource = @"Gallery\home.png"
                 });
                 _context.Categories.Add(new Category()
                 {
                     Name = "Transport",
                     Summ = 0,
+                    ImageSource = @"Gallery\transport.png",
                     UserId = newUser.ID
                 });
                 _context.SaveChanges();

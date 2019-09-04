@@ -23,5 +23,6 @@ namespace DLL.Entities
 
         public double Summ { get; set; }
         
+        [Required] public string ImageSource { get; set; }
     }
 }
