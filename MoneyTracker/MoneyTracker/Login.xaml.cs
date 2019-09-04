@@ -42,9 +42,7 @@ namespace MoneyTracker
             int result = _userService.Login(new UserLoginModel()
             {
                 Login = tbLogin.Text,
-                Password = pbPassword.Password
-                
-                
+                Password = pbPassword.Password            
             });
             if (result > 0)
             {

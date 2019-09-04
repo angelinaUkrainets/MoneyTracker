@@ -82,11 +82,8 @@ namespace BLL.Services
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
-
-           
         }
     }
 }

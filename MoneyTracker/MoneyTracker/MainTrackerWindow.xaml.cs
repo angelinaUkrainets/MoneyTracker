@@ -29,54 +29,56 @@ namespace MoneyTracker
 
         private void Pluss_Click(object sender, RoutedEventArgs e)
         {
-            //Button button = new Button();
-            //button.Content = "wadawd";
-            //button.Height = 80;
-            //button.Width = 150;
-            //grid.Children.Add(button);
             PlusWindow window = new PlusWindow(IdUser);
             window.ShowDialog();
         }
 
         private void Category1_Click(object sender, RoutedEventArgs e)
         {
-            CostWindow window = new CostWindow();
+            string categoryName = "Clothing";
+            CostWindow window = new CostWindow(categoryName);
             window.ShowDialog();
         }
 
         private void Category2_Click(object sender, RoutedEventArgs e)
         {
-            CostWindow window = new CostWindow();
+            string categoryName = "Dining";
+            CostWindow window = new CostWindow(categoryName);
             window.ShowDialog();
         }
 
         private void Category3_Click(object sender, RoutedEventArgs e)
         {
-            CostWindow window = new CostWindow();
+            string categoryName = "Education";
+            CostWindow window = new CostWindow(categoryName);
             window.ShowDialog();
         }
 
         private void Category4_Click(object sender, RoutedEventArgs e)
         {
-            CostWindow window = new CostWindow();
+            string categoryName = "Freetime";
+            CostWindow window = new CostWindow(categoryName);
             window.ShowDialog();
         }
 
         private void Category5_Click(object sender, RoutedEventArgs e)
         {
-            CostWindow window = new CostWindow();
+            string categoryName = "Health";
+            CostWindow window = new CostWindow(categoryName);
             window.ShowDialog();
         }
 
         private void Category6_Click(object sender, RoutedEventArgs e)
         {
-            CostWindow window = new CostWindow();
+            string categoryName = "Home";
+            CostWindow window = new CostWindow(categoryName);
             window.ShowDialog();
         }
 
         private void Category7_Click(object sender, RoutedEventArgs e)
         {
-            CostWindow window = new CostWindow();
+            string categoryName = "Transport";
+            CostWindow window = new CostWindow(categoryName);
             window.ShowDialog();
         }
     }
