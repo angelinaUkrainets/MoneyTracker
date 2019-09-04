@@ -68,10 +68,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\blueprint.png" />
+            <Image  x:Name="Img7" Source="Gallery\blueprint.png" />
         </Button>
 
-        <Button x:Name="Button2" Click="New_Button_Click"
+        <Button x:Name="Button2" Click="Button2_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="2" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -82,10 +82,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\cake.png" />
+            <Image x:Name="Img8" Source="Gallery\cake.png" />
         </Button>
 
-        <Button x:Name="Button3" Click="New_Button_Click"
+        <Button x:Name="Button3" Click="Button3_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="3" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -96,10 +96,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\cosmetics.png" />
+            <Image x:Name="Img9" Source="Gallery\cosmetics.png" />
         </Button>
 
-        <Button x:Name="Button4" Click="New_Button_Click"
+        <Button x:Name="Button4" Click="Button4_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="4" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -110,10 +110,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\dog.png" />
+            <Image x:Name="Img1" Source="Gallery\dog.png" />
         </Button>
 
-        <Button x:Name="Button5" Click="New_Button_Click"
+        <Button x:Name="Button5" Click="Button5_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="5" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -124,10 +124,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\giftbox.png" />
+            <Image x:Name="Img2" Source="Gallery\giftbox.png" />
         </Button>
 
-        <Button x:Name="Button6" Click="New_Button_Click"
+        <Button x:Name="Button6" Click="Button6_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="6" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -138,10 +138,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\recycle-sign.png" />
+            <Image x:Name="Img3" Source="Gallery\recycle-sign.png" />
         </Button>
 
-        <Button x:Name="Button7" Click="New_Button_Click"
+        <Button x:Name="Button7" Click="Button7_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="2" Grid.Column="1" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -152,10 +152,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\shower.png" />
+            <Image x:Name="Img4" Source="Gallery\shower.png" />
         </Button>
 
-        <Button x:Name="Button8" Click="New_Button_Click"
+        <Button x:Name="Button8" Click="Button8_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="2" Grid.Column="2" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -166,10 +166,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\open-magazine.png" />
+            <Image x:Name="Img5" Source="Gallery\open-magazine.png" />
         </Button>
 
-        <Button x:Name="Button9" Click="New_Button_Click"
+        <Button x:Name="Button9" Click="Button9_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="2" Grid.Column="3" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -180,10 +180,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\hospital.png" />
+            <Image x:Name="Img6" Source="Gallery\hospital.png" />
         </Button>
 
-        <Button x:Name="Button10" Click="New_Button_Click"
+        <Button x:Name="Button10" Click="Button10_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="2" Grid.Column="4" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -194,10 +194,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\mixer.png" />
+            <Image x:Name="Img10" Source="Gallery\mixer.png" />
         </Button>
 
-        <Button x:Name="Button11" Click="New_Button_Click"
+        <Button x:Name="Button11" Click="Button11_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="2" Grid.Column="5" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -208,10 +208,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\eiffel-tower.png" />
+            <Image x:Name="Img11" Source="Gallery\eiffel-tower.png" />
         </Button>
 
-        <Button x:Name="Button12" Click="New_Button_Click"
+        <Button x:Name="Button12" Click="Button12_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="2" Grid.Column="6" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -222,10 +222,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\pig.png" />
+            <Image x:Name="Img12" Source="Gallery\pig.png" />
         </Button>
 
-        <Button x:Name="Button13" Click="New_Button_Click"
+        <Button x:Name="Button13" Click="Button13_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="1" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -236,10 +236,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\buy-online.png" />
+            <Image x:Name="Img13" Source="Gallery\buy-online.png" />
         </Button>
 
-        <Button x:Name="Button14" Click="New_Button_Click"
+        <Button x:Name="Button14" Click="Button14_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="2" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -250,10 +250,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\wifi.png" />
+            <Image x:Name="Img14" Source="Gallery\wifi.png" />
         </Button>
 
-        <Button x:Name="Button15" Click="New_Button_Click"
+        <Button x:Name="Button15" Click="Button15_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="3" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -264,10 +264,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\reaper.png" />
+            <Image x:Name="Img15" Source="Gallery\reaper.png" />
         </Button>
 
-        <Button x:Name="Button16" Click="New_Button_Click"
+        <Button x:Name="Button16" Click="Button16_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="4" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -278,10 +278,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\salad.png" />
+            <Image x:Name="Img16" Source="Gallery\salad.png" />
         </Button>
 
-        <Button x:Name="Button17" Click="New_Button_Click"
+        <Button x:Name="Button17" Click="Button17_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="5" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -292,10 +292,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\water.png" />
+            <Image x:Name="Img17" Source="Gallery\water.png" />
         </Button>
 
-        <Button x:Name="Button18" Click="New_Button_Click"
+        <Button x:Name="Button18" Click="Button18_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="6" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -306,10 +306,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\ring.png" />
+            <Image x:Name="Img18" Source="Gallery\ring.png" />
         </Button>
 
-        <Button x:Name="Button19" Click="New_Button_Click"
+        <Button x:Name="Button19" Click="Button19_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="4" Grid.Column="1" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -320,10 +320,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\key.png" />
+            <Image x:Name="Img19" Source="Gallery\key.png" />
         </Button>
 
-        <Button x:Name="Button20" Click="New_Button_Click"
+        <Button x:Name="Button20" Click="Button20_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="4" Grid.Column="2" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -334,10 +334,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\small-diamond.png" />
+            <Image x:Name="Img20" Source="Gallery\small-diamond.png" />
         </Button>
 
-        <Button x:Name="Button21" Click="New_Button_Click"
+        <Button x:Name="Button21" Click="Button21_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="4" Grid.Column="3" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -348,10 +348,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\bag.png" />
+            <Image x:Name="Img21" Source="Gallery\bag.png" />
         </Button>
 
-        <Button x:Name="Button22" Click="New_Button_Click"
+        <Button x:Name="Button22" Click="Button22_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="4" Grid.Column="4" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -362,10 +362,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\umbrella.png" />
+            <Image x:Name="Img22" Source="Gallery\umbrella.png" />
         </Button>
 
-        <Button x:Name="Button23" Click="New_Button_Click"
+        <Button x:Name="Button23" Click="Button23_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="4" Grid.Column="5" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -376,10 +376,10 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\gun.png" />
+            <Image x:Name="Img23" Source="Gallery\gun.png" />
         </Button>
 
-        <Button x:Name="Button24" Click="New_Button_Click"
+        <Button x:Name="Button24" Click="Button24_Click"
                 Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="4" Grid.Column="6" Height="50" Width="50">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
@@ -390,7 +390,7 @@
                     </Grid>
                 </ControlTemplate>
             </Button.Template>
-            <Image  Source="Gallery\rocket.png" />
+            <Image x:Name="Img24" Source="Gallery\rocket.png" />
         </Button>
     </Grid>
 </Window>

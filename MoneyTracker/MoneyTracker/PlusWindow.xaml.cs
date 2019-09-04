@@ -23,10 +23,17 @@ namespace MoneyTracker
     {
         private readonly int IdUser;
         private EFContext _context = new EFContext();
+        private string _imageSource;
         public PlusWindow(int res)
         {
             InitializeComponent();
             IdUser = res;
+        }
+
+        public PlusWindow(string Img)
+        {
+            InitializeComponent();
+            _imageSource = Img;
         }
 
         private void Cancel_Button_Click(object sender, RoutedEventArgs e)
@@ -42,7 +49,8 @@ namespace MoneyTracker
                 {
                     Name = tbNameCategory.Text,
                     UserId = IdUser,
-                    Summ = 0
+                    Summ = 0,
+                    ImageSource = _imageSource
                 });
                 _context.SaveChanges();
             }
