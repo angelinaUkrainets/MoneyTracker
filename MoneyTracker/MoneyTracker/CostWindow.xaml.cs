@@ -52,11 +52,13 @@ namespace MoneyTracker
             {
                 operation.WayOfPayId = 1;
                 operation.Summ = Double.Parse(tbSumm.Text);
+                operation.WayOfPayId = 1;
             }
             else
             {
                 operation.WayOfPayId = 0;
                 operation.Summ = Double.Parse(tbSumm.Text);
+                operation.WayOfPayId = 2;
             }
             int result = operationService.AddOperation(new OperationAddModel()
             {

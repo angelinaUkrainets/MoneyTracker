@@ -23,7 +23,7 @@ namespace BLL.Services
             try
             {
                 int result = -1;
-                Operation newOperation = new Operation() { Summ = operation.Summ, CategoryId = operation.CategoryId, IsProfit = operation.IsProfit, WayOfPayId = operation.WayOfPayId };
+                Operation newOperation = new Operation() { Summ = operation.Summ, CategoryId = operation.CategoryId, IsProfit = operation.IsProfit, WayOfPayId = operation.WayOfPayId};
                 repository.Add(newOperation);
                 result = 1;
                 return result;
