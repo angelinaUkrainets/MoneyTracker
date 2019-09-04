@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MoneyTracker"
         mc:Ignorable="d"
-        Title="IconWindow" Height="300" Width="400">
+        Title="IconWindow" Height="450" Width="600">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="Gallery\fone.png" Stretch="UniformToFill"/>
@@ -23,7 +23,7 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="35*"/>
-            <RowDefinition Height="45"/>
+            <RowDefinition Height="45*"/>
             <RowDefinition Height="45*"/>
             <RowDefinition Height="45*"/>
             <RowDefinition Height="45*"/>
@@ -31,7 +31,7 @@
             <RowDefinition Height="8*"/>
         </Grid.RowDefinitions>
 
-        <Button x:Name="Cancel_Button" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="0" Grid.Column="0" Height="Auto" Opacity="0.8" Margin="10,2,9,3">
+        <Button x:Name="Cancel_Button" Click="Cancel_Button_Click" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="0" Grid.Column="0" Height="45" Width="45" Opacity="0.8" Margin="10,2,9,3">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
                     <Grid>
@@ -44,7 +44,7 @@
             <Image  Source="Gallery\close.png" />
         </Button>
 
-        <Button x:Name="Done_Button" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="0" Grid.Column="7" Height="Auto" Opacity="0.8" Margin="9,2,10,3">
+        <Button x:Name="Done_Button" Click="Done_Button_Click" Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="0" Grid.Column="7" Height="45" Width="45" Opacity="0.8" Margin="9,2,10,3">
             <Button.Template>
                 <ControlTemplate  TargetType="Button">
                     <Grid>
@@ -55,6 +55,342 @@
                 </ControlTemplate>
             </Button.Template>
             <Image  Source="Gallery\tick.png" />
+        </Button>
+
+        <Button x:Name="Button1" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="1" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\blueprint.png" />
+        </Button>
+
+        <Button x:Name="Button2" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="2" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\cake.png" />
+        </Button>
+
+        <Button x:Name="Button3" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="3" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\cosmetics.png" />
+        </Button>
+
+        <Button x:Name="Button4" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="4" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\dog.png" />
+        </Button>
+
+        <Button x:Name="Button5" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="5" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\giftbox.png" />
+        </Button>
+
+        <Button x:Name="Button6" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="1" Grid.Column="6" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\recycle-sign.png" />
+        </Button>
+
+        <Button x:Name="Button7" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="2" Grid.Column="1" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\shower.png" />
+        </Button>
+
+        <Button x:Name="Button8" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="2" Grid.Column="2" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\open-magazine.png" />
+        </Button>
+
+        <Button x:Name="Button9" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="2" Grid.Column="3" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\hospital.png" />
+        </Button>
+
+        <Button x:Name="Button10" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="2" Grid.Column="4" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\mixer.png" />
+        </Button>
+
+        <Button x:Name="Button11" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="2" Grid.Column="5" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\eiffel-tower.png" />
+        </Button>
+
+        <Button x:Name="Button12" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="2" Grid.Column="6" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\pig.png" />
+        </Button>
+
+        <Button x:Name="Button13" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="1" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\buy-online.png" />
+        </Button>
+
+        <Button x:Name="Button14" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="2" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\wifi.png" />
+        </Button>
+
+        <Button x:Name="Button15" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="3" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\reaper.png" />
+        </Button>
+
+        <Button x:Name="Button16" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="4" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\salad.png" />
+        </Button>
+
+        <Button x:Name="Button17" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="5" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\water.png" />
+        </Button>
+
+        <Button x:Name="Button18" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="3" Grid.Column="6" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\ring.png" />
+        </Button>
+
+        <Button x:Name="Button19" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="4" Grid.Column="1" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\key.png" />
+        </Button>
+
+        <Button x:Name="Button20" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="4" Grid.Column="2" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\small-diamond.png" />
+        </Button>
+
+        <Button x:Name="Button21" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="4" Grid.Column="3" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\bag.png" />
+        </Button>
+
+        <Button x:Name="Button22" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="4" Grid.Column="4" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\umbrella.png" />
+        </Button>
+
+        <Button x:Name="Button23" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="4" Grid.Column="5" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\gun.png" />
+        </Button>
+
+        <Button x:Name="Button24" Click="New_Button_Click"
+                Background="DarkOrange" FontSize="10" Foreground="Black" Grid.Row="4" Grid.Column="6" Height="50" Width="50">
+            <Button.Template>
+                <ControlTemplate  TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="DarkOrange"></Ellipse>
+                        <Label Content="{TemplateBinding Content}" HorizontalAlignment="Center"
+                               VerticalAlignment="Center"></Label>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+            <Image  Source="Gallery\rocket.png" />
         </Button>
     </Grid>
 </Window>

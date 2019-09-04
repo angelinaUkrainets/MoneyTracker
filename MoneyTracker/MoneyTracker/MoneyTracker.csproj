@@ -215,5 +215,59 @@
   <ItemGroup>
     <Resource Include="Gallery\heart.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\open-magazine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\hospital.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\mixer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\eiffel-tower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\pig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\buy-online.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\customer-support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\reaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\salad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\ring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\small-diamond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\umbrella.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\gun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gallery\rocket.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
