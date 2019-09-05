@@ -64,6 +64,13 @@ namespace MoneyTracker
                             item.CardBalance -= Double.Parse(tbSumm.Text);
                         }
                     }
+                    foreach (var item in context.Categories)
+                    {
+                        if (item.Name == categoryName)
+                        {
+                            item.Summ += Double.Parse(tbSumm.Text);
+                        }
+                    }
                 }
                 else
                 {
@@ -75,6 +82,13 @@ namespace MoneyTracker
                         if (item.Login == login && item.Password == password)
                         {
                             item.CashBalance -= Double.Parse(tbSumm2.Text);
+                        }
+                    }
+                    foreach (var item in context.Categories)
+                    {
+                        if (item.Name == categoryName)
+                        {
+                            item.Summ += Double.Parse(tbSumm2.Text);
                         }
                     }
                     int result = operationService.AddOperation(new OperationAddModel()
