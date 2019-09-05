@@ -131,5 +131,12 @@
             </Button.Template>
             <Image  Source="Gallery\plus-button.png" />
         </Button>
+        <Label x:Name="lCategory1" Content="0" FontSize="20" Foreground="DarkOrange" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="lCategory2" Content="0" FontSize="20" Foreground="DarkOrange" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="lCategory3" Content="0" FontSize="20" Foreground="DarkOrange" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="lCategory4" Content="0" FontSize="20" Foreground="DarkOrange" Grid.Column="3" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="lCategory5" Content="0" FontSize="20" Foreground="DarkOrange" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="lCategory6" Content="0" FontSize="20" Foreground="DarkOrange" Grid.Column="0" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label x:Name="lCategory7" Content="0" FontSize="20" Foreground="DarkOrange" Grid.Column="5" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Top"/>
     </Grid>
 </Window>
