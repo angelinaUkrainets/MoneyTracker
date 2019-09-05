@@ -57,9 +57,12 @@ namespace MoneyTracker
                     operation.WayOfPayId = 1;
                     operation.Summ = Double.Parse(tbSumm.Text);
                     operation.WayOfPayId = 1;
-                    foreach(var item in context.Users)
+                    foreach (var item in context.Users)
                     {
-                        item.CardBalance -= Double.Parse(tbSumm.Text);
+                        if (item.Login == login && item.Password == password)
+                        {
+                            item.CardBalance -= Double.Parse(tbSumm.Text);
+                        }
                     }
                 }
                 else
@@ -69,18 +72,22 @@ namespace MoneyTracker
                     operation.WayOfPayId = 2;
                     foreach (var item in context.Users)
                     {
-                        item.CashBalance -= Double.Parse(tbSumm2.Text);
+                        if (item.Login == login && item.Password == password)
+                        {
+                            item.CashBalance -= Double.Parse(tbSumm2.Text);
+                        }
                     }
+                    int result = operationService.AddOperation(new OperationAddModel()
+                    {
+                        CategoryId = operation.CategoryId,
+                        WayOfPayId = operation.WayOfPayId,
+                        Summ = operation.Summ
+
+                        // Покашо не зроблено IsProfit
+                    });
+                    context.SaveChanges();
+                    this.Close();
                 }
-                int result = operationService.AddOperation(new OperationAddModel()
-                {
-                    CategoryId = operation.CategoryId,
-                    WayOfPayId = operation.WayOfPayId,
-                    Summ = operation.Summ
-                     
-                // Покашо не зроблено IsProfit
-            });
-                this.Close();
             }
             catch (Exception ex)
             {
