@@ -24,13 +24,15 @@ namespace MoneyTracker
     public partial class CostWindow : Window
     {
         private EFContext context = new EFContext();
-        public string categoryName;
+        public string categoryName, login, password;
         private readonly IOperationService operationService;
-        public CostWindow(string categoryName_)
+        public CostWindow(string categoryName_, string login_, string password_)
         {
             InitializeComponent();
             categoryName = categoryName_;
             operationService = new OperationService();
+            login = login_;
+            password = password_;
         }
 
         private void Cancel_Button_Click(object sender, RoutedEventArgs e)
@@ -41,32 +43,49 @@ namespace MoneyTracker
         private void Done_Button_Click(object sender, RoutedEventArgs e)
         {
             Operation operation = new Operation();
-            foreach (var item in context.Categories)
+            try
             {
-                if (categoryName == item.Name)
+                foreach (var item in context.Categories)
                 {
-                    operation.CategoryId = item.ID;
+                    if (categoryName == item.Name)
+                    {
+                        operation.CategoryId = item.ID;
+                    }
                 }
-            }
-            if (CardTabItem.IsSelected)
-            {
-                operation.WayOfPayId = 1;
-                operation.Summ = Double.Parse(tbSumm.Text);
-                operation.WayOfPayId = 1;
-            }
-            else
-            {
-                operation.WayOfPayId = 0;
-                operation.Summ = Double.Parse(tbSumm.Text);
-                operation.WayOfPayId = 2;
-            }
-            int result = operationService.AddOperation(new OperationAddModel()
-            {
-               CategoryId = operation.CategoryId,
-               WayOfPayId = operation.WayOfPayId,
-               Summ = operation.Summ
-               // Покашо не зроблено IsProfit
+                if (CardTabItem.IsSelected)
+                {
+                    operation.WayOfPayId = 1;
+                    operation.Summ = Double.Parse(tbSumm.Text);
+                    operation.WayOfPayId = 1;
+                    foreach(var item in context.Users)
+                    {
+                        item.CardBalance -= Double.Parse(tbSumm.Text);
+                    }
+                }
+                else
+                {
+                    operation.WayOfPayId = 0;
+                    operation.Summ = Double.Parse(tbSumm2.Text);
+                    operation.WayOfPayId = 2;
+                    foreach (var item in context.Users)
+                    {
+                        item.CashBalance -= Double.Parse(tbSumm2.Text);
+                    }
+                }
+                int result = operationService.AddOperation(new OperationAddModel()
+                {
+                    CategoryId = operation.CategoryId,
+                    WayOfPayId = operation.WayOfPayId,
+                    Summ = operation.Summ
+                     
+                // Покашо не зроблено IsProfit
             });
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

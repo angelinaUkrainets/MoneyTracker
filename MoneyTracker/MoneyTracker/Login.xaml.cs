@@ -47,7 +47,7 @@ namespace MoneyTracker
             if (result > 0)
             {
                 this.Visibility = Visibility.Hidden;
-                MainTrackerWindow tracker = new MainTrackerWindow(result);
+                MainTrackerWindow tracker = new MainTrackerWindow(result, tbLogin.Text, pbPassword.Password);
                 if (tracker.ShowDialog() == true)
                 {
                     this.Visibility = Visibility.Visible;
